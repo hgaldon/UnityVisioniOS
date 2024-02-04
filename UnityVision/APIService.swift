@@ -1,7 +1,7 @@
 import Foundation
 
 class APIService {
-    static let baseUrl = "http://3.90.9.35:3000"  // Ensure you're using http:// or https://
+    static let baseUrl = "http://localhost:3000"
 
     static func signUp(name: String, email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
         guard let url = URL(string: "\(baseUrl)/signup") else {
